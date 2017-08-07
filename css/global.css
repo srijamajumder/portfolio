@@ -1,0 +1,190 @@
+/* This is the global .css file for Le Collegiate. */
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.1em ;
+    line-height: 1.3em;
+}
+
+/*
+*************************************** SIDEBOX ****************************************
+*/
+
+.sidebox {
+    position: fixed;
+    background: #6ed3cf;
+    width: 20%;
+    height: 100%;
+    text-align: center;
+}
+
+.frontface {
+    border-radius: 50%;
+    width: 40%;
+    display: block;
+    margin: 20% auto 0 auto;
+}
+
+.firstname {
+    font-family: arial;
+    font-size: 1.1em;
+    display: inline;
+    color: white;
+}
+
+.lastname {
+    font-family: arial;
+    font-size: 1.1em;
+    display: inline;
+    color: black;
+}
+
+.namealign {
+    margin: 10% auto;
+    display: inline-block;
+}
+
+.namewrapper {
+    text-align: center;
+}
+
+.sidebox ul {
+    margin: 10% 0;
+    list-style: none;
+    text-align: center;
+}
+
+.sidebox ul li a {
+    display: inline-block;
+    font-weight: 600;
+    width: 100%;
+    padding: 2% 0;
+    color: white;
+}
+
+.sidebox ul li a:hover {
+    display: inline-block;
+    width: 100%;
+    border-radius: 17px;
+    padding: 2% 0;
+    background: white;
+    color: black;
+}
+
+.boxfooter {
+    font-family: Arial;
+    font-size: 0.9em;
+    margin-top: 30%;
+    display: inline-block;
+}
+
+/*
+*************************************** CONTENT ****************************************
+*/
+
+.content {
+    position: absolute;
+    margin-left: 20%;
+    width: 58%;
+    padding: 1% 1%;
+}
+
+.headings1, .headings2, .headings3 {
+    line-height: 1.3;
+    display: block;
+}
+
+.headings1 {
+    border-radius: 5px;
+    padding: 25px 10px ;
+    text-align: center;
+    background: black;
+    color: white;
+}
+
+.headings2 {
+    padding: 20px 10px ;
+}
+
+
+.headings3 {
+    padding: 15px 10px ;
+}
+
+.headings2, .headings3 {
+    color: black;
+}
+
+.headings2:hover, .headings3:hover {
+    width: 50%;
+    color: black;
+}
+
+
+.paragraphs {
+    padding: 10px 20px;
+}
+
+.pictures {
+    padding: 10px 20px;
+}
+
+/*
+*************************************** CONTENTINDEX ****************************************
+*/
+
+
+.contentindex {
+    position: fixed;
+    margin-left: 80%;
+    float: left;
+    width: 20%;
+    min-height: 100%;
+    background: #6ed3cf;
+}
+
+/*
+*************************************** @MEDIA ****************************************
+*/
+
+
+@media only screen and (min-width: 150px) and (max-width: 1024px) {
+
+    .sidebox {
+        position: relative;
+        float:left;
+        width: 100%;
+    }
+
+    .sidebox ul li a:hover {
+    border-radius: 25px;
+    }
+
+
+    .content {
+        position: relative;
+        float: left;
+        width: 98%;
+        margin: 0;
+    }
+
+    .contentindex{
+        position:relative;
+        float:left;
+        width:100%;
+    }
+
+    .boxfooter {
+        padding : 20px 20px;
+    }
+}
